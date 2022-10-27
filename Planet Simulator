@@ -5,21 +5,14 @@ local MainSection = Main:NewSection("Misc")
 MainSection:NewButton ("Rejoin", "If you click this you will rejoin the game", function()
     game:GetService("TeleportService"):Teleport(game.PlaceId, game:GetService("Players").LocalPlayer)
 end)
-    MainSection:NewToggle("Super-Human", "go fast and jump high", function(state)
-        if state then
-            game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 250
-        else
-            game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
-        end
-    end)
 --AutoFarm
 local AutoFarm = Window:NewTab("Auto Farm")
 local AutoFarmSection = AutoFarm:NewSection("Automatics")
 AutoFarmSection:NewButton("Auto mass/orb", "If you want to turn off you must rejoin the game", function()
-    while wait() do
-        local args = {
+while wait() do
+local args = {
     [1] = "Mass",
-    [2] = 898989898989898989898989898998989899989899989898
+    [2] = 999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999
 }
 
 game:GetService("ReplicatedStorage").ChangePlayerStat:FireServer(unpack(args))
