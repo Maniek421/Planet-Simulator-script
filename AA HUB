@@ -1,6 +1,6 @@
 --Hub
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-local Window = Library.CreateLib("Hub                                                                    Version 0.3.2", "GrapeTheme")
+local Window = Library.CreateLib("Hub                                                                    Version 0.3.2", "Serpent")
 local Main = Window:NewTab("Main")
 local MainSection = Main:NewSection("Loaders")
 --Scripts
