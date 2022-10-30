@@ -1,0 +1,27 @@
+--Main
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("Main                                                                   Version 0.3.2", "Serpent")
+local Main = Window:NewTab("Main")
+--AutoFarm
+local MainSection = Main:NewSection("AutoFarm")
+AutoFarmSection:NewButton("Auto Wins", "If you want to turn off you must rejoin game", function()
+while task.wait() do
+game.Players.LocalPlayer.Character.Humanoid.Jump = true
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-49.6723785, 2624.06836, 27.1024342, -0.076290682, 0.061357867, -0.995195925, 9.47870227e-09, 0.998104811, 0.0615372099, 0.997085631, 0.00469470629, -0.076146096)
+end
+end)
+
+MainSection:NewButton ("Rejoin", "If you click this you will rejoin the game", function()
+    game:GetService("TeleportService"):Teleport(game.PlaceId, game:GetService("Players").LocalPlayer)
+end)
+
+
+
+
+
+--Gui
+local Ui = Window:NewTab("Ui")
+local UiSection = Ui:NewSection("Ui settings")
+UiSection:NewKeybind("Keybind", "Set keybind for script Ui", Enum.KeyCode.F, function()
+	Library:ToggleUI()
+end)
