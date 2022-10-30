@@ -25,3 +25,4 @@ local UiSection = Ui:NewSection("Ui settings")
 UiSection:NewKeybind("Keybind", "Set keybind for script Ui", Enum.KeyCode.F, function()
 	Library:ToggleUI()
 end)
+
