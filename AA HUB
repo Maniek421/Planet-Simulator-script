@@ -10,6 +10,6 @@ MainSection:NewButton ("Planet Simulator", "Click to load script", function()
 end)
 --Roblox but every second you get +1 Jump
 MainSection:NewButton ("Roblox but every second you get +1 Jump", "Click to load script", function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/Maniek421/Scripts/main/Planet%20Simulator"))()
+    loadstring(game:HttpGet("https://github.com/Maniek421/Scripts/blob/main/Roblox%20but%20every%20second%20you%20get%20+1%20Jump"))()
 end)
 
