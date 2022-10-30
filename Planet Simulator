@@ -19,6 +19,7 @@ game:GetService("ReplicatedStorage").ChangePlayerStat:FireServer(unpack(args))
 end
 end)
 
+--Gui
 local Ui = Window:NewTab("Ui")
 local UiSection = Ui:NewSection("Ui settings")
 UiSection:NewKeybind("Keybind", "Set keybind for script Ui", Enum.KeyCode.F, function()
