@@ -6,5 +6,5 @@ local MainSection = Main:NewSection("Loaders")
 --Scripts
 --Planet Simulator
 MainSection:NewButton ("Planet Simulator", "Click to load script", function()
-    loadstring(game:httpGet("https://raw.githubusercontent.com/Maniek421/Scripts_new/main/Planet%20Simulator"))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Maniek421/Scripts/main/Planet%20Simulator"))()
 end)
